@@ -32,6 +32,7 @@
     - Всегда побеждает тот волк, которого ты кормишь.
     <div class="menu-bottom">
         <ul>
+            <li class="miss">Миссия</li>
             <li class="service">Услуги</li>
             <li class="talk">Истории</li>
             <li class="contacts">Спросить</li>
