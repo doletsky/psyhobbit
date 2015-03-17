@@ -23,13 +23,66 @@ body {
     position: relative;
     overflow: hidden;
 }
+/*персоналия и связь*/
+.person {
+    bottom: 390px;
+    color: #fff;
+    display: block;
+    /*height: 300px;*/
+    left: 50%;
+    margin-bottom: 20px;
+    margin-left: -630px;
+    /*opacity: 0.7;
+    padding: 10px 30px;*/
+    position: absolute;
+    width: 1200px;
+    z-index: 999;
+}
+.person .foto {
+    background: url("../images/itsme.png") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    height: 200px;
+    width: 232px;
+    float: left;
+    margin-right: 20px;
+}
+.person .name {
+    font-size: 54px;
+}
+.person .subtitle {
+    font-size: 100%;
+}
+.person .action {
+    position: relative;
+    float: right;
+    top: -80px;
+}
+.person .phone {
+    font-size: 36px;
+    color: orangered;
+}
+.person .mail {
+    font-size: 24px;
+    color: greenyellow;
+}
+.get_consult {
+    background: linear-gradient(to bottom, #fdc244 0%, #f15b4b 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 200;
+    padding: 9px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /*нижее поле для текста*/
 .text {
     background-color: #363636;
-    bottom: 0;
+    border-top: 1px solid greenyellow;
+    bottom: 50px;
     color: #fff;
     display: block;
-    height: 33%;
+    height: 300px;
     left: 50%;
     margin-bottom: 20px;
     margin-left: -630px;
@@ -39,21 +92,45 @@ body {
     width: 1200px;
     z-index: 999;
 }
+.text .title {
+    color: greenyellow;
+    font-size: 34px;
+    padding: 0 0 10px 20px;
+}
+
 .menu-bottom {
-    background-color: gold;
+    /*background-color: gold;*/
     bottom: 0;
     margin-bottom: 0;
-    margin-left: -30px;
+    margin-left: -70px;
     position: absolute;
-    width: 1260px;
+    width: 1300px;
 }
 .menu-bottom ul {
     margin-top: 0;
-    padding-bottom: 7px;
+    padding-bottom: 0;
 }
 .menu-bottom ul li {
     float: left;
     list-style-type: none;
     text-align: center;
     width: 25%;
+    cursor: pointer;
+    color: #363636;
+    text-transform: uppercase;
+}
+.service {
+    background-color: gold;
+}
+.talk {
+    background-color: greenyellow;
+}
+.contacts {
+    background-color: orangered;
+}
+.about {
+    background-color: lightskyblue;
+}
+li.active {
+    background-color: #363636;
 }
