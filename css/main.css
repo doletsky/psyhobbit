@@ -54,11 +54,11 @@ body {
 .person .action {
     position: relative;
     float: right;
-    top: -80px;
+    top: -40px;
 }
 .person .phone {
-    font-size: 36px;
-    color: orangered;
+	color: greenyellow;
+    font-size: 24px;
 }
 .person .mail {
     font-size: 24px;
