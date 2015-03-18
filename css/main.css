@@ -39,7 +39,7 @@ body {
     z-index: 999;
 }
 .person .foto {
-    background: url("../images/itsme.png") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    background: url("../images/itsme_004.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
     height: 200px;
     width: 232px;
     float: left;
