@@ -49,7 +49,7 @@
         $strPoint='';
         $strHTML='<div class="text-content" id="talk">';
         foreach($listFile as $fname){
-            $idName=trim($fname,'.txt');
+            $idName=trim($fname,".txt");
             $strPoint.='<div class="point" id="'.$idName.'"></div>';
             $miss=str_replace("\n", "<br />",file_get_contents($dir.$fname));
             $strHTML.='<div class="slide"  id="'.$idName.'">'.$miss.'</div>';

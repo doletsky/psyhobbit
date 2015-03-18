@@ -24,10 +24,5 @@ $(document).ready(function(){
         });
     });
 
-    $('.slide-point .point').each(function(e){
-        setTimeout(function(){
-            var slideIdT=$(e).attr('id');
-            alert(slideIdT);
-        }, 3000);
-    });
+
 });
