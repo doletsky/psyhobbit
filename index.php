@@ -54,12 +54,22 @@
             $miss=str_replace("\n", "<br />",file_get_contents($dir.$fname));
             $strHTML.='<div class="slide"  id="'.$idName.'">'.$miss.'</div>';
         }
-        $strHTML.='</div><div class="slide-point" id="talk"><div class="view-time"><div class="load-time"></div></div>'.$strPoint.'</div>';
+        $strHTML.='</div><div class="slide-point" id="talk"><div class="button-next">></div><div class="view-time"><div class="load-time"></div></div>'.$strPoint.'</div>';
         echo $strHTML;
         ?>
 
     <div class="text-content" id="contacts">
+    <form>
+        <textarea id="askText" cols="70" rows="10" placeholder="Здесь напишите Ваш вопрос."></textarea>
+        <div class="askme">
+            Обязательно укажите, как к Вам обращаться и куда ответить<br><br>
+            Ваше имя: <input id="askName" type="text" size="60" placeholder="Как я могук Вам обращаться?"><br>
+            Телефон: <input id="askTel" type="text" size="60" placeholder="Если укажете телефон, то я Вам позвоню."><br>
+            E-mail: <input id="askEmail" type="email" size="60" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>
+            <input id="askButton" type="button" value="Спросить">
+        </div>
 
+    </form>
     </div>
     <div class="text-content" id="about">
         <?

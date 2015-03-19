@@ -6,6 +6,7 @@ body {
     background-color: #363636;
     padding: 0;
     margin: 0;
+    font-family: "PT Sans","Helvetica Neue",Helvetica,sans-serif;
 }
 .blur {
     filter: blur(5px);
@@ -39,7 +40,7 @@ body {
     z-index: 999;
 }
 .person .foto {
-    background: url("../images/itsme_004.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    background: url("../images/itsme_011.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
     height: 200px;
     width: 232px;
     float: left;
@@ -146,4 +147,13 @@ body {
 }
 li.active {
     background-color: #363636;
+}
+
+#contacts input {
+    float: right;
+    margin: 0 20px;
+}
+#contacts textarea {
+    float: right;
+    margin: 0 20px;
 }

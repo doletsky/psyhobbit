@@ -20,5 +20,13 @@ $(document).ready(function(){
         $('.slide-point#'+textBox).css('display','block');
 
     });
+
+    $('#askButton').click(function(){
+        var name=$('#askName').val();
+        var tel=$('#askTel').val();
+        var email=$('#askEmail').val();
+        var text=$('#askText').val();
+        $.post("sendmail.php", {name: name, tel: tel, email: email, text:text});
+    });
 });
 

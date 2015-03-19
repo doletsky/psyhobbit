@@ -29,6 +29,9 @@ $(document).ready(function(){
     $('.slide').click(function(){
         clickNextSlide();
     });
+    $('.button-next').click(function(){
+        clickNextSlide();
+    });
 
     /*autorun slide*/
     var speedAutorun=5000;
@@ -64,6 +67,9 @@ $(document).ready(function(){
     }
     loadInFull();
     var timer = setTimeout(run, speedAutorun);
+
+    $('.button-next').mouseover(function(){clearTimeout(timer);$('.load-time').css('background-color','inherit');$('.load-time').queue("fx", []);});
+    $('.button-next').mouseout(function(){loadInFull();timer = setTimeout(run, speedAutorun);});
 
     $('.slide').mouseover(function(){clearTimeout(timer);$('.load-time').css('background-color','inherit');$('.load-time').queue("fx", []);});
     $('.slide').mouseout(function(){loadInFull();timer = setTimeout(run, speedAutorun);});
