@@ -4,6 +4,7 @@
     float: left;
     display: none;
     position: relative;
+    cursor: pointer;
 }
 .slide-point {
     position: absolute;
@@ -24,4 +25,18 @@
 .slide-point .active {
     background-color: #fff;
 
+}
+.view-time {
+    float: left;
+    position: relative;
+    height: 5px;
+    width: 50px;
+    border: solid 1px #ffffff;
+    text-align: left;
+    margin-right: 20px;
+}
+.load-time {
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff;
 }

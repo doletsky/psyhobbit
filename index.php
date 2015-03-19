@@ -54,7 +54,7 @@
             $miss=str_replace("\n", "<br />",file_get_contents($dir.$fname));
             $strHTML.='<div class="slide"  id="'.$idName.'">'.$miss.'</div>';
         }
-        $strHTML.='</div><div class="slide-point" id="talk">'.$strPoint.'</div>';
+        $strHTML.='</div><div class="slide-point" id="talk"><div class="view-time"><div class="load-time"></div></div>'.$strPoint.'</div>';
         echo $strHTML;
         ?>
 
