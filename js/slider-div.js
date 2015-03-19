@@ -26,12 +26,17 @@ $(document).ready(function(){
         });
     });
 
+    $('.slide').click(function(){
+        clickNextSlide();
+    });
+
     /*autorun slide*/
     var speedAutorun=5000;
     var idPoint=[];
     $('.slide-point .point').each(function(){idPoint[idPoint.length]=$(this).attr('id');});
     var nextId=idPoint[0];
-    function run() {
+
+    function clickNextSlide(){
         var curId=$('.active:visible').attr('id');
         if(curId){
             for(var find=0; find<idPoint.length; find++){
@@ -42,6 +47,10 @@ $(document).ready(function(){
             }
             $('.slide-point .point#'+nextId).click();
         }
+    }
+
+    function run() {
+        clickNextSlide();
         loadInFull();
         timer = setTimeout(run, speedAutorun);
     }
@@ -51,12 +60,12 @@ $(document).ready(function(){
         $('.load-time').animate({
                 width: "50px"
             },
-            speedAutorun-100);
+            speedAutorun-10, function(){$('.load-time').css('width','0px');});
     }
     loadInFull();
     var timer = setTimeout(run, speedAutorun);
 
-    $('.slide').mouseover(function(){clearTimeout(timer);$('.load-time').css('background-color','inherit');});
+    $('.slide').mouseover(function(){clearTimeout(timer);$('.load-time').css('background-color','inherit');$('.load-time').queue("fx", []);});
     $('.slide').mouseout(function(){loadInFull();timer = setTimeout(run, speedAutorun);});
 
 
