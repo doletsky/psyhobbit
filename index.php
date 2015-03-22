@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider-div.css" rel="stylesheet">
+	<link rel='stylesheet' id='x-font-custom-css'  href='//fonts.googleapis.com/css?family=PT+Sans%3A400%2C400italic%2C700%2C700italic%7CPT+Sans%3A400%7CPT+Sans%3A400%7CPT+Sans%3A400&#038;subset=latin%2Clatin-ext&#038;ver=3.2.3' type='text/css' media='all' />    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider-div.js"></script>
