@@ -28,5 +28,9 @@ $(document).ready(function(){
         var text=$('#askText').val();
         $.post("sendmail.php", {name: name, tel: tel, email: email, text:text});
     });
+
+    $('.get_consult').click(function(){
+        $('.win_get_consult').css('display','block');
+    });
 });
 

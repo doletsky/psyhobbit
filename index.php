@@ -7,7 +7,6 @@
     <meta name="description" content="" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider-div.css" rel="stylesheet">
-	<link rel='stylesheet' id='x-font-custom-css'  href='//fonts.googleapis.com/css?family=PT+Sans%3A400%2C400italic%2C700%2C700italic%7CPT+Sans%3A400%7CPT+Sans%3A400%7CPT+Sans%3A400&#038;subset=latin%2Clatin-ext&#038;ver=3.2.3' type='text/css' media='all' />    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider-div.js"></script>
@@ -17,6 +16,8 @@
 
 <body>
 <div class="person">
+    <div class="slogan">Наша жизнь - дорога из детства. В начале мы собирали сокровища - фантики, стеклышки, камешки... Прошло время, а мы все собираем.. Правда больше по привычке.. Даже не замечая..
+        И уже не сокровища, а просто камни.. Тяжелые.. Но если оставить все ненужное на краю дороги, то мир преобразится!</div>
     <div class="foto"></div>
     <div class="name">Александра Долецкая</div>
     <div class="subtitle">психолог, бизнес-тренер</div>
@@ -26,7 +27,18 @@
         <a class="get_consult" href="#">Записаться на консультацию</a>
     </div>
 </div>
-
+<div class="win_get_consult">
+    <div class="win_get_consult_header">Запись на консультацию</div>
+    Имя <input type="text" size="40"><br>
+    Дата <input type="date"><br>
+    Время <input type="time"><br>
+    Тема консультации<br>
+    <textarea></textarea>
+    <div class="win_get_consult_footer">
+        * Стоимость одного часа личной консультации 1500 руб. Для первой встречи предоставляется скидка 50%.<br>
+        Данная форма является запросом на консультацию. Дата и время подтверждаются личным контактом по телефону.
+    </div>
+</div>
 <div class="text">
 
     <div class="title">Миссия</div>
