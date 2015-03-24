@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Psyhobbit</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <title>Александра Долецкая. Консультация психолога.</title>
+    <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, сайт психолога" />
+    <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в москве" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider-div.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -15,6 +15,43 @@
 </head>
 
 <body>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter29259340 = new Ya.Metrika({id:29259340,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/29259340" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61150061-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <div class="person">
     <div class="foto"></div>
     <div class="name">Александра Долецкая</div>
@@ -22,7 +59,7 @@
     <div class="phone">+7(926)389-01-54</div>
     <div class="mail">doletskaya@bk.ru</div>
     <div class="action">
-        <a class="get_consult" href="#">Записаться на консультацию</a>
+        <a class="get_consult" href="#wincons">Записаться на консультацию</a>
     </div>
 </div>
 <div class="win_get_consult">
@@ -51,7 +88,7 @@
                     Дата:
                 </td>
                 <td>
-                    <input id="GCdata" type="date">
+                    <input id="GCdata" type="date" placeholder="Желаемая дата консультации">
                 </td>
             </tr>
             <tr>
@@ -59,17 +96,17 @@
                     Время:
                 </td>
                 <td>
-                    <input id="GCtime" type="time">
+                    <input id="GCtime" type="time" placeholder="Желаемое время консультации">
                 </td>
             </tr>
         </table><br>
         <u>Тема консультации:</u><br>
-        <textarea id="GCtext" rows="10" cols="57" placeholder="Кратко опишите Вашу тему для консультирования"></textarea><br>
-        <a href="#" class="get_consult_yet">Записаться</a>
+        <textarea id="GCtext" rows="10" cols="68" placeholder="Кратко опишите Вашу тему для консультирования"></textarea><br>
+        <a href="#getcons" class="get_consult_yet">Записаться</a>
     </div>
     <div class="win_get_consult_after">Ваш запрос отправлен.<br>Я свяжусь с Вами по указанным контактам в течении дня.</div>
     <div class="win_get_consult_footer">
-        * Стоимость одного часа личной консультации 1500 руб. Для первой встречи предоставляется скидка 50%.<br>
+        * Стоимость одного часа индивидуальной работы 1500 руб. 
         Данная форма является запросом на консультацию. Дата и время подтверждаются личным контактом по телефону.
     </div>
 </div>
@@ -107,13 +144,13 @@
 
     <div class="text-content" id="contacts">
     <form>
-        <textarea id="askText" cols="70" rows="10" placeholder="Здесь напишите Ваш вопрос."></textarea>
+        <textarea id="askText" cols="70" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea>
         <div class="askme">
             <input type="hidden" id="askForm" name="askForm" value="getAsk">
             Обязательно укажите, как к Вам обращаться и куда ответить<br><br>
-            Ваше имя: <input id="askName" type="text" size="60" placeholder="Как я могук Вам обращаться?"><br>
-            Телефон: <input id="askTel" type="text" size="60" placeholder="Если укажете телефон, то я Вам позвоню."><br>
-            E-mail: <input id="askEmail" type="email" size="60" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>
+            Ваше имя: <input id="askName" type="text" size="58" placeholder="Как я могу к Вам обращаться?"><br>
+            Телефон: <input id="askTel" type="text" size="58" placeholder="Если укажете телефон, то я Вам позвоню."><br>
+            E-mail: <input id="askEmail" type="email" size="58" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>
             <input id="askButton" type="button" value="Спросить">
         </div>
 
