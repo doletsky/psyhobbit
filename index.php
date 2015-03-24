@@ -16,8 +16,6 @@
 
 <body>
 <div class="person">
-    <div class="slogan">Наша жизнь - дорога из детства. В начале мы собирали сокровища - фантики, стеклышки, камешки... Прошло время, а мы все собираем.. Правда больше по привычке.. Даже не замечая..
-        И уже не сокровища, а просто камни.. Тяжелые.. Но если оставить все ненужное на краю дороги, то мир преобразится!</div>
     <div class="foto"></div>
     <div class="name">Александра Долецкая</div>
     <div class="subtitle">психолог, бизнес-тренер</div>
@@ -28,12 +26,48 @@
     </div>
 </div>
 <div class="win_get_consult">
-    <div class="win_get_consult_header">Запись на консультацию</div>
-    Имя <input type="text" size="40"><br>
-    Дата <input type="date"><br>
-    Время <input type="time"><br>
-    Тема консультации<br>
-    <textarea></textarea>
+    <div class="win_get_consult_header">Запись на консультацию<span class="close">x</span> </div>
+    <div class="win_get_consult_body">
+        <input type="hidden" id="GCform" name="formName" value="getCons">
+        <table>
+            <tr>
+                <td>
+                    Имя:
+                </td>
+                <td>
+                    <input id="GCname" type="text" size="50" placeholder="Как к Вам обращаться">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Тел./email:
+                </td>
+                <td>
+                    <input id="GCcontacts" type="text" size="50" placeholder="Удобный для Вас способ связи">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Дата:
+                </td>
+                <td>
+                    <input id="GCdata" type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Время:
+                </td>
+                <td>
+                    <input id="GCtime" type="time">
+                </td>
+            </tr>
+        </table><br>
+        <u>Тема консультации:</u><br>
+        <textarea id="GCtext" rows="10" cols="57" placeholder="Кратко опишите Вашу тему для консультирования"></textarea><br>
+        <a href="#" class="get_consult_yet">Записаться</a>
+    </div>
+    <div class="win_get_consult_after">Ваш запрос отправлен.<br>Я свяжусь с Вами по указанным контактам в течении дня.</div>
     <div class="win_get_consult_footer">
         * Стоимость одного часа личной консультации 1500 руб. Для первой встречи предоставляется скидка 50%.<br>
         Данная форма является запросом на консультацию. Дата и время подтверждаются личным контактом по телефону.
@@ -75,6 +109,7 @@
     <form>
         <textarea id="askText" cols="70" rows="10" placeholder="Здесь напишите Ваш вопрос."></textarea>
         <div class="askme">
+            <input type="hidden" id="askForm" name="askForm" value="getAsk">
             Обязательно укажите, как к Вам обращаться и куда ответить<br><br>
             Ваше имя: <input id="askName" type="text" size="60" placeholder="Как я могук Вам обращаться?"><br>
             Телефон: <input id="askTel" type="text" size="60" placeholder="Если укажете телефон, то я Вам позвоню."><br>

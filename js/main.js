@@ -22,15 +22,36 @@ $(document).ready(function(){
     });
 
     $('#askButton').click(function(){
+        var form=$('#askForm').val();
         var name=$('#askName').val();
         var tel=$('#askTel').val();
         var email=$('#askEmail').val();
         var text=$('#askText').val();
-        $.post("sendmail.php", {name: name, tel: tel, email: email, text:text});
+        $.post("sendmail.php", {form: form, name: name, tel: tel, email: email, text:text});
+    });
+
+    $('.get_consult_yet').click(function(){
+        var form=$('#GCform').val();
+        var name=$('#GCname').val();
+        var contacts=$('#GCcontacts').val();
+        var data=$('#GCdata').val();
+        var time=$('#GCtime').val();
+        var text=$('#GCtext').val();
+        $.post("sendmail.php", {form: form, name: name, contacts: contacts, data: data, time: time, text:text});
     });
 
     $('.get_consult').click(function(){
         $('.win_get_consult').css('display','block');
+    });
+    $('.get_consult_yet').click(function(){
+        $('.win_get_consult_body').css('display','none');
+        $('.win_get_consult_footer').css('display','none');
+        $('.win_get_consult').css('bottom','250px');
+        $('.win_get_consult_after').css('display','block');
+    });
+
+    $('.close').click(function(){
+        $('.win_get_consult').css('display','none');
     });
 });
 
