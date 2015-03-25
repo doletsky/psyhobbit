@@ -146,6 +146,27 @@ body {
     color: #fff;
     text-align: justify;
 }
+/*адрес на яндекс-карте*/
+.map {
+    background-color: #808080;
+    border: 7px solid #474747;
+    bottom: 50px;
+    display: none;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+    width: 580px;
+    z-index: 9999;
+    color: #ffffff;
+}
+.load-map {
+    color: #ffffff;
+    position: relative;
+    top: 20px;
+    left: 90px;
+}
+
+
 /*нижее поле для текста*/
 .text {
     background-color: #363636;
@@ -162,7 +183,7 @@ body {
     position: absolute;
     width: 1200px;
     z-index: 999;
-    font-size: 20px;
+    font-size: 18px;
 }
 .text .title {
     color: gold;

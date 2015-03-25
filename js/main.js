@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     /*init scroll-style*/
     $(".text-content").niceScroll();
+    $(".text-content .slide").niceScroll();
 
     $('.menu-bottom ul li').click(function(){
 
@@ -18,6 +19,8 @@ $(document).ready(function(){
         $('.text .title').text(title);
         $('.text-content#'+textBox).css('display','block');
         $('.slide-point#'+textBox).css('display','block');
+        $('.slide:first').css('display','block');
+        $('.point#'+$('.slide:first').attr('id')).addClass('active');
 
     });
 
@@ -52,6 +55,13 @@ $(document).ready(function(){
 
     $('.close').click(function(){
         $('.win_get_consult').css('display','none');
+    });
+
+    $('.load-map').click(function(){
+        $('.map').css('display','block');
+        var data='<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=6HwhZb2_-iq_t0gIzHl4i8hSgHfaLX8-&width=580&height=319"></script>';
+            $('.ymap').html(data);
+
     });
 });
 

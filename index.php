@@ -21,7 +21,7 @@
     (w[c] = w[c] || []).push(function() {
         try {
             w.yaCounter29259340 = new Ya.Metrika({id:29259340,
-                    webvisor:true,
+                    webvisor:false,
                     clickmap:true,
                     trackLinks:true,
                     accurateTrackBounce:true});
@@ -59,7 +59,8 @@
     <div class="phone">+7(926)389-01-54</div>
     <div class="mail">doletskaya@bk.ru</div>
     <div class="action">
-        <a class="get_consult" href="#wincons">Записаться на консультацию</a>
+        <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
+        <a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a>
     </div>
 </div>
 <div class="win_get_consult">
