@@ -60,7 +60,7 @@
     <div class="mail">doletskaya@bk.ru</div>
     <div class="action">
         <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
-        <a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a>
+        <?if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?endif?>
     </div>
 </div>
 <div class="win_get_consult">
