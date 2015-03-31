@@ -58,7 +58,7 @@
     <div class="subtitle">психолог, психотерапевт</div>
     <div class="phone">+7(926)389-01-54</div>
     <div class="mail">doletskaya@bk.ru</div>
-    <div class="subtitle i">взрослым, желающим быть еще счастливее</div>
+    <div class="subtitle i">взрослым, желающим быть ещё счастливее</div>
     <div class="action">
         <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
         <?if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?endif?>
