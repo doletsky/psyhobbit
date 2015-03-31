@@ -55,9 +55,10 @@
 <div class="person">
     <div class="foto"></div>
     <div class="name">Александра Долецкая</div>
-    <div class="subtitle">психолог, бизнес-тренер</div>
+    <div class="subtitle">психолог, психотерапевт</div>
     <div class="phone">+7(926)389-01-54</div>
     <div class="mail">doletskaya@bk.ru</div>
+    <div class="subtitle i">взрослым, желающим быть еще счастливее</div>
     <div class="action">
         <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
         <?if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?endif?>
@@ -121,7 +122,7 @@
     </div>
     <div class="text-content" id="service">
         <?
-        echo $miss=str_replace("\n", "<br />",file_get_contents('texts/service.txt'));
+        echo $miss=file_get_contents('texts/service.txt');
         ?>
     </div>
 
