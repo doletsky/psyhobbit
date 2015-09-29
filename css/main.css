@@ -248,13 +248,13 @@ body {
 .service {
     background-color: orange;
 }
-.talk {
+.about {
     background-color: greenyellow;
 }
-.contacts {
+.talk  {
     background-color: orangered;
 }
-.about {
+.contacts{
     background-color: lightskyblue;
 }
 li.active {
@@ -268,4 +268,11 @@ li.active {
 #contacts textarea {
     float: right;
     margin: 0 20px;
+}
+.copyright {
+    bottom: 0%;
+    position: absolute;
+    right: 3px;
+    color: #ffff88;
+    font-size: 85%;
 }

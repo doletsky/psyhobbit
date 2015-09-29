@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Александра Долецкая. Консультация психолога.</title>
-    <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, сайт психолога" />
-    <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в москве" />
+    <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, психодрама, монодрама, сайт психолога" />
+    <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в Москве, психодрама и монодрама" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider-div.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -61,7 +61,8 @@
     <div class="subtitle i">взрослым, желающим быть ещё счастливее</div>
     <div class="action">
         <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
-        <?if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?endif?>
+        <?php
+        if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?php endif?>
     </div>
 </div>
 <div class="win_get_consult">
@@ -116,17 +117,18 @@
 
     <div class="title">Миссия</div>
     <div class="text-content" id="miss">
-        <?
+        <?php
         echo $miss=str_replace("\n", "<br />",file_get_contents('texts/missiya.txt'));
         ?>
     </div>
     <div class="text-content" id="service">
-        <?
+        <?php
         echo $miss=file_get_contents('texts/service.txt');
         ?>
     </div>
 
-        <?//history box
+        <?php
+        //history box
         $dir='texts/history/';
         $listFile=scandir($dir);
         unset($listFile[0]);
@@ -159,7 +161,7 @@
     </form>
     </div>
     <div class="text-content" id="about">
-        <?
+        <?php
         echo $miss=str_replace("\n", "<br />",file_get_contents('texts/about_me.txt'));
         ?>
     </div>
@@ -167,14 +169,18 @@
         <ul>
             <li class="miss">Миссия</li>
             <li class="service">Услуги</li>
+            <li class="about">Обо мне</li>
             <li class="talk">Истории</li>
             <li class="contacts">Спросить</li>
-            <li class="about">Обо мне</li>
+
         </ul>
     </div>
 </div>
     <div class="imgback blur">
 
     </div>
+<div class="copyright">
+    &copy; Александра Долецкая. 2015г.
+</div>
 </body>
 </html>
