@@ -7,7 +7,10 @@
 <tr><td>• самооценка</td><td>• психосоматические расстройства</td></tr>
 <tr><td>• отсутствие поддержки и самоподдержки</td><td></td></tr>
 </table>
-
+<div class="oferta">
+<div class="price">Стоимость сеанса <span>2500&nbsp;руб.<span> </div>
+<div class="add">Длительность сеанса 1 час</div>
+</div>
 
 
 
