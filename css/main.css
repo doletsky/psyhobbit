@@ -60,6 +60,11 @@ body {
     float: right;
     top: -40px;
 }
+.mobil .person .action {
+    float: none;
+    top: 50px;
+    left: -200px;
+}
 .person .phone {
 	color: greenyellow;
     font-size: 24px;
@@ -79,6 +84,10 @@ body {
     text-shadow: 0 2px 5px black;
     font-weight: bold;
     /*border-bottom: solid 1px grey;*/
+}
+.mobil .person .i{
+    left: 35px;
+    bottom: -13px;
 }
 .get_consult {
     background: linear-gradient(to bottom, #fdc244 0%, #f15b4b 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -198,6 +207,10 @@ body {
     z-index: 999;
     font-size: 16px;
 }
+.mobil .text {
+    width: 444px;
+    bottom: 0;
+}
 .text .title {
     color: gold;
     font-size: 34px;
@@ -261,6 +274,18 @@ li.active {
     background-color: #363636;
 }
 
+.mobil .menu-bottom ul{
+    width: 504px;
+    top: 15px;
+    position: relative;
+}
+.mobil .menu-bottom ul li{
+    width: 50%;
+}
+.mobil .menu-bottom ul li.open {
+    width: 504px;
+}
+
 #contacts input {
     float: right;
     margin: 0 20px;
@@ -268,4 +293,15 @@ li.active {
 #contacts textarea {
     float: right;
     margin: 0 20px;
+}
+
+.full{
+    display: none;
+}
+
+.mobil{
+    left: 50%;
+    position: relative;
+    top: 640px;
+    margin-left: -250px;
 }

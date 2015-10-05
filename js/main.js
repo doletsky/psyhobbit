@@ -1,12 +1,15 @@
 $(document).ready(function(){
     /*init text missiya display*/
-    $('#miss').css('display','block');
+    $('div.ver:visible').children().children('#miss').css('display','block');
 
     /*init scroll-style*/
     $(".text-content").niceScroll();
     $(".text-content .slide").niceScroll();
 
     $('.menu-bottom ul li').click(function(){
+        var eOpen=$('.menu-bottom ul li.open');
+        $('.menu-bottom ul li').removeClass('open');
+
 
         $('.text .text-content').css('display','none');
         $('.slide-point').css('display','none');
@@ -19,9 +22,11 @@ $(document).ready(function(){
         $('.text .title').text(title);
         $('.text-content#'+textBox).css('display','block');
         $('.slide-point#'+textBox).css('display','block');
-        $('.slide:first').css('display','block');
-        $('.point#'+$('.slide:first').attr('id')).addClass('active');
+        $('div.ver:visible').find('.slide:first').css('display','block');
+        $('.point#'+$('div.ver:visible').find('.slide:first').attr('id')).addClass('active');
 
+        $(this).addClass('open');
+        $('.menu-bottom ul li.open').insertBefore(eOpen);
     });
 
     $('#askButton').click(function(){
