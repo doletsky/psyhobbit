@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*init text missiya display*/
-    $('div.ver:visible').children().children('#miss').css('display','block');
+    $('div.ver:visible').find('#miss').css('display','block');
 
     /*init scroll-style*/
     $(".text-content").niceScroll();
