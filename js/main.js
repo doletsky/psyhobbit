@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('div.ver:visible').find('#miss').css('display','block');
 
     /*init scroll-style*/
-    $(".text-content").niceScroll();
-    $(".text-content .slide").niceScroll();
+    $(".text-content").niceScroll({cursoropacitymin:1});
+    $(".text-content .slide").niceScroll({cursoropacitymin:1});
 
     $('.menu-bottom ul li').click(function(){
         var eOpen=$('.menu-bottom ul li.open');

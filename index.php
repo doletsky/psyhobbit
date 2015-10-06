@@ -134,7 +134,7 @@
 
             <div class="text-content" id="contacts">
                 <form>
-                    <textarea id="askText" cols="70" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea>
+
                     <div class="askme">
                         <input type="hidden" id="askForm" name="askForm" value="getAsk">
                         Обязательно укажите, как к Вам обращаться и куда ответить<br><br>
@@ -143,7 +143,7 @@
                         E-mail: <input id="askEmail" type="email" size="58" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>
                         <input id="askButton" type="button" value="Спросить">
                     </div>
-
+                    <textarea id="askText" cols="70" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea>
                 </form>
             </div>
             <div class="text-content" id="about">

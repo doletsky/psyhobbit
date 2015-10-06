@@ -73,7 +73,7 @@ body {
     display: block;
     height: inherit;
     left: inherit;
-    margin: 5%;
+    margin: 20px 5%;
     position: absolute;
     width: 83%;
     z-index: 999;
@@ -230,7 +230,7 @@ body {
 .mobil .text {
     bottom: inherit;
     left: inherit;
-    margin: 5%;
+    margin: 2px 5%;
     width: 83%;
     top: 250px;
     height: 40%;
@@ -243,7 +243,7 @@ body {
 
 .text .text-content {
     display: none;
-    height: 210px;
+    height: 85%;
     line-height: 1.5;
     overflow: auto;
     position: relative;
@@ -315,8 +315,16 @@ li.active {
     margin: 0 20px;
 }
 #contacts textarea {
-    float: right;
-    margin: 0 20px;
+    /*float: right;*/
+    margin: 20px 0;
+}
+#contacts .askme{
+    float: left;
+    width: 460px;
+    margin-right: 20px;
+}
+#contacts .askme-note{
+    width: 100px;
 }
 .copyright {
     bottom: 0%;
@@ -336,6 +344,9 @@ li.active {
     padding: 5px;
     width: 236px;
     float: right;
+    position: absolute;
+    top: 0;
+    right: 30px;
 }
 .oferta .price{
     font-size: 120%;
@@ -364,10 +375,10 @@ li.active {
     overflow: hidden;
 }
  .ul-service {
-     width: 100%;
+     width: 60%;
  }
  .ul-service li {
-     width: 100px;
+     width: 45%;
      float: left;
      margin-right: 5px;
  }

@@ -52,21 +52,21 @@ $(document).ready(function(){
         }
     }
 
-    function run() {
-        clickNextSlide();
-        loadInFull();
-        timer = setTimeout(run, speedAutorun);
-    }
-    function loadInFull(){
-        $('.load-time').css('width','0px');
-        $('.load-time').css('background-color','#ffffff');
-        $('.load-time').animate({
-                width: "50px"
-            },
-            speedAutorun-10, function(){$('.load-time').css('width','0px');});
-    }
-    loadInFull();
-    var timer = setTimeout(run, speedAutorun);
+//    function run() {
+//        clickNextSlide();
+//        loadInFull();
+//        timer = setTimeout(run, speedAutorun);
+//    }
+//    function loadInFull(){
+//        $('.load-time').css('width','0px');
+//        $('.load-time').css('background-color','#ffffff');
+//        $('.load-time').animate({
+//                width: "50px"
+//            },
+//            speedAutorun-10, function(){$('.load-time').css('width','0px');});
+//    }
+//    loadInFull();
+//    var timer = setTimeout(run, speedAutorun);
 
     $('.button-next').mouseover(function(){clearTimeout(timer);$('.load-time').css('background-color','inherit');$('.load-time').queue("fx", []);});
     $('.button-next').mouseout(function(){loadInFull();timer = setTimeout(run, speedAutorun);});
