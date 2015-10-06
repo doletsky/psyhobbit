@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Александра Долецкая. Консультация психолога.</title>
-    <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, сайт психолога" />
-    <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в москве" />
+    <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, психодрама, монодрама, сайт психолога" />
+    <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в Москве, психодрама и монодрама" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider-div.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -53,134 +53,7 @@
 
 </script>
 
-<div class="ver full">
 
-    <div class="person">
-        <div class="foto"></div>
-        <div class="name">Александра Долецкая</div>
-        <div class="subtitle">психолог, психотерапевт</div>
-        <div class="phone">+7(926)389-01-54</div>
-        <div class="mail">doletskaya@bk.ru</div>
-        <div class="subtitle i">взрослым, желающим быть ещё счастливее</div>
-        <div class="action">
-            <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
-            <?if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?endif?>
-        </div>
-    </div>
-    <div class="win_get_consult">
-        <div class="win_get_consult_header">Запись на консультацию<span class="close">x</span> </div>
-        <div class="win_get_consult_body">
-            <input type="hidden" id="GCform" name="formName" value="getCons">
-            <table>
-                <tr>
-                    <td>
-                        Имя:
-                    </td>
-                    <td>
-                        <input id="GCname" type="text" size="50" placeholder="Как к Вам обращаться">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Тел./email:
-                    </td>
-                    <td>
-                        <input id="GCcontacts" type="text" size="50" placeholder="Удобный для Вас способ связи">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Дата:
-                    </td>
-                    <td>
-                        <input id="GCdata" type="date" placeholder="Желаемая дата консультации">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Время:
-                    </td>
-                    <td>
-                        <input id="GCtime" type="time" placeholder="Желаемое время консультации">
-                    </td>
-                </tr>
-            </table><br>
-            <u>Тема консультации:</u><br>
-            <textarea id="GCtext" rows="10" cols="68" placeholder="Кратко опишите Вашу тему для консультирования"></textarea><br>
-            <a href="#getcons" class="get_consult_yet">Записаться</a>
-        </div>
-        <div class="win_get_consult_after">Ваш запрос отправлен.<br>Я свяжусь с Вами по указанным контактам в течении дня.</div>
-        <div class="win_get_consult_footer">
-            * Стоимость одного часа индивидуальной работы 1500 руб.
-            Данная форма является запросом на консультацию. Дата и время подтверждаются личным контактом по телефону.
-        </div>
-    </div>
-    <div class="text">
-
-        <div class="title">Миссия</div>
-        <div class="text-content" id="miss">
-            <?
-            echo $miss=str_replace("\n", "<br />",file_get_contents('texts/missiya.txt'));
-            ?>
-        </div>
-        <div class="text-content" id="service">
-            <?
-            echo $miss=file_get_contents('texts/service.txt');
-            ?>
-        </div>
-
-        <?//history box
-        $dir='texts/history/';
-        $listFile=scandir($dir);
-        unset($listFile[0]);
-        unset($listFile[1]);
-
-        $strPoint='';
-        $strHTML='<div class="text-content" id="talk">';
-        foreach($listFile as $fname){
-            $idName=trim($fname,".txt");
-            $strPoint.='<div class="point" id="'.$idName.'"></div>';
-            $miss=str_replace("\n", "<br />",file_get_contents($dir.$fname));
-            $strHTML.='<div class="slide"  id="'.$idName.'">'.$miss.'</div>';
-        }
-        $strHTML.='</div><div class="slide-point" id="talk"><div class="button-next">></div><div class="view-time"><div class="load-time"></div></div>'.$strPoint.'</div>';
-        echo $strHTML;
-        ?>
-
-        <div class="text-content" id="contacts">
-            <form>
-                <textarea id="askText" cols="70" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea>
-                <div class="askme">
-                    <input type="hidden" id="askForm" name="askForm" value="getAsk">
-                    Обязательно укажите, как к Вам обращаться и куда ответить<br><br>
-                    Ваше имя: <input id="askName" type="text" size="58" placeholder="Как я могу к Вам обращаться?"><br>
-                    Телефон: <input id="askTel" type="text" size="58" placeholder="Если укажете телефон, то я Вам позвоню."><br>
-                    E-mail: <input id="askEmail" type="email" size="58" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>
-                    <input id="askButton" type="button" value="Спросить">
-                </div>
-
-            </form>
-        </div>
-        <div class="text-content" id="about">
-            <?
-            echo $miss=str_replace("\n", "<br />",file_get_contents('texts/about_me.txt'));
-            ?>
-        </div>
-        <div class="menu-bottom">
-            <ul>
-                <li class="miss">Миссия</li>
-                <li class="service">Услуги</li>
-                <li class="talk">Истории</li>
-                <li class="contacts">Спросить</li>
-                <li class="about">Обо мне</li>
-            </ul>
-        </div>
-    </div>
-    <div class="imgback blur">
-
-    </div>
-
-</div>
 <div class="ver mobil">
     <div class="position">
         <div class="person">
@@ -216,22 +89,6 @@
                             <input id="GCcontacts" type="text" size="50" placeholder="Удобный для Вас способ связи">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            Дата:
-                        </td>
-                        <td>
-                            <input id="GCdata" type="date" placeholder="Желаемая дата консультации">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Время:
-                        </td>
-                        <td>
-                            <input id="GCtime" type="time" placeholder="Желаемое время консультации">
-                        </td>
-                    </tr>
                 </table><br>
                 <u>Тема консультации:</u><br>
                 <textarea id="GCtext" rows="10" cols="68" placeholder="Кратко опишите Вашу тему для консультирования"></textarea><br>
@@ -239,7 +96,7 @@
             </div>
             <div class="win_get_consult_after">Ваш запрос отправлен.<br>Я свяжусь с Вами по указанным контактам в течении дня.</div>
             <div class="win_get_consult_footer">
-                * Стоимость одного часа индивидуальной работы 1500 руб.
+                * Стоимость одного часа индивидуальной работы 2500 руб.
                 Данная форма является запросом на консультацию. Дата и время подтверждаются личным контактом по телефону.
             </div>
         </div>
@@ -298,9 +155,9 @@
                 <ul>
                     <li class="miss open">Миссия</li>
                     <li class="service">Услуги</li>
+                    <li class="about">Обо мне</li>
                     <li class="talk">Истории</li>
                     <li class="contacts">Спросить</li>
-                    <li class="about">Обо мне</li>
                 </ul>
             </div>
         </div>
@@ -308,6 +165,9 @@
 
     <div class="imgback blur">
 
+    </div>
+<div class="copyright">
+    &copy; Александра Долецкая. 2015г.
     </div>
 </div>
 

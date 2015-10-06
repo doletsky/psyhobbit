@@ -26,7 +26,7 @@ $(document).ready(function(){
         $('.point#'+$('div.ver:visible').find('.slide:first').attr('id')).addClass('active');
 
         $(this).addClass('open');
-        $('.menu-bottom ul li.open').insertBefore(eOpen);
+//        $('.menu-bottom ul li.open').insertBefore(eOpen);
     });
 
     $('#askButton').click(function(){

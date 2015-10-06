@@ -138,7 +138,7 @@ body {
     background-color: #808080;
     border: 7px solid #474747;
     border-radius: 25px;
-    bottom: 60px;
+    top: 250px;
     display: none;
     left: 50%;
     margin-left: -300px;
@@ -263,7 +263,7 @@ body {
     margin-bottom: 0;
     margin-left: -70px;
     position: absolute;
-    width: 1300px;
+    width: 100%;
     font-size: 16px;
 }
 .menu-bottom ul {
@@ -285,13 +285,13 @@ body {
 .service {
     background-color: orange;
 }
-.talk {
+.about {
     background-color: greenyellow;
 }
-.contacts {
+.talk  {
     background-color: orangered;
 }
-.about {
+.contacts{
     background-color: lightskyblue;
 }
 li.active {
@@ -299,16 +299,16 @@ li.active {
 }
 
 .mobil .menu-bottom ul{
-    width: 504px;
+    width: 100%;
     top: 15px;
     position: relative;
 }
 .mobil .menu-bottom ul li{
-    width: 50%;
+    width: 20%;
 }
-.mobil .menu-bottom ul li.open {
-    width: 504px;
-}
+/*.mobil .menu-bottom ul li.open {*/
+    /*width: 504px;*/
+/*}*/
 
 #contacts input {
     float: right;
@@ -317,6 +317,37 @@ li.active {
 #contacts textarea {
     float: right;
     margin: 0 20px;
+}
+.copyright {
+    bottom: 0%;
+    position: absolute;
+    right: 3px;
+    color: #ffff88;
+    font-size: 85%;
+}
+
+#service table{
+    float: left;
+}
+.oferta{
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-top: 54px;
+    padding: 5px;
+    width: 236px;
+    float: right;
+}
+.oferta .price{
+    font-size: 120%;
+    text-align: center;
+}
+.oferta .price span{
+    font-size: 120%;
+    text-align: center;
+}
+.oferta .add{
+    font-size: 80%;
+    text-align: center;
 }
 
 .full{
@@ -332,4 +363,11 @@ li.active {
     height: 100%;
     overflow: hidden;
 }
-
+ .ul-service {
+     width: 100%;
+ }
+ .ul-service li {
+     width: 100px;
+     float: left;
+     margin-right: 5px;
+ }
