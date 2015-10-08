@@ -141,9 +141,10 @@
                         Ваше имя: <input id="askName" type="text" size="58" placeholder="Как я могу к Вам обращаться?"><br>
                         Телефон: <input id="askTel" type="text" size="58" placeholder="Если укажете телефон, то я Вам позвоню."><br>
                         E-mail: <input id="askEmail" type="email" size="58" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>
-                        <input id="askButton" type="button" value="Спросить">
                     </div>
-                    <textarea id="askText" cols="70" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea>
+
+                    <textarea id="askText" cols="60" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea><br>
+                    <input id="askButton" type="button" value="Спросить">
                 </form>
             </div>
             <div class="text-content" id="about">

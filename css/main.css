@@ -138,7 +138,7 @@ body {
     background-color: #808080;
     border: 7px solid #474747;
     border-radius: 25px;
-    top: 250px;
+    top: 170px;
     display: none;
     left: 50%;
     margin-left: -300px;
@@ -221,7 +221,7 @@ body {
     margin-bottom: 20px;
     margin-left: -630px;
     opacity: 0.7;
-    padding: 10px 30px;
+    padding: 10px 30px 20px;
     position: absolute;
     width: 1200px;
     z-index: 999;
@@ -233,7 +233,7 @@ body {
     margin: 2px 5%;
     width: 83%;
     top: 250px;
-    height: 40%;
+    height: 43%;
 }
 .text .title {
     color: gold;
@@ -245,7 +245,7 @@ body {
     display: none;
     height: 85%;
     line-height: 1.5;
-    overflow: auto;
+    overflow-y: auto;
     position: relative;
     padding-right: 50px;
 }
@@ -311,20 +311,24 @@ li.active {
 /*}*/
 
 #contacts input {
-    float: right;
-    margin: 0 20px;
+    /*float: right;*/
+    margin: 0 20px 0 0;
 }
 #contacts textarea {
     /*float: right;*/
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 #contacts .askme{
     float: left;
-    width: 460px;
+    width: 440px;
     margin-right: 20px;
 }
 #contacts .askme-note{
     width: 100px;
+}
+#contacts #askButton{
+    margin: 10px 0 0;
+    /*float: right;*/
 }
 .copyright {
     bottom: 0%;
@@ -376,6 +380,8 @@ li.active {
 }
  .ul-service {
      width: 60%;
+     border-top: rgb(255, 165, 0) solid 1px;
+     padding-top: 7px;
  }
  .ul-service li {
      width: 45%;

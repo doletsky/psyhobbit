@@ -1,12 +1,14 @@
 $(document).ready(function(){
     /*init text missiya display*/
     $('div.ver:visible').find('#miss').css('display','block');
-
+    $('.slide:first').css('display','block');
+    $('.point:first').addClass('active');
     /*init scroll-style*/
-    $(".text-content").niceScroll({cursoropacitymin:1});
-    $(".text-content .slide").niceScroll({cursoropacitymin:1});
+    $(".text-content:not(#talk)").niceScroll({cursoropacitymin:1});
+    $(".text-content#talk .slide").niceScroll({cursoropacitymin:1});
 
     $('.menu-bottom ul li').click(function(){
+        if($(this).hasClass('open'))return;
         var eOpen=$('.menu-bottom ul li.open');
         $('.menu-bottom ul li').removeClass('open');
 
@@ -22,11 +24,12 @@ $(document).ready(function(){
         $('.text .title').text(title);
         $('.text-content#'+textBox).css('display','block');
         $('.slide-point#'+textBox).css('display','block');
-        $('div.ver:visible').find('.slide:first').css('display','block');
-        $('.point#'+$('div.ver:visible').find('.slide:first').attr('id')).addClass('active');
+//        $('div.ver:visible').find('.slide:first').css('display','block');
+//        $('.point#'+$('div.ver:visible').find('.slide:first').attr('id')).addClass('active');
 
         $(this).addClass('open');
-//        $('.menu-bottom ul li.open').insertBefore(eOpen);
+        if($('.slide:visible').length>0)$('.slide').getNiceScroll().show();
+        else $('.slide').getNiceScroll().hide();
     });
 
     $('#askButton').click(function(){
