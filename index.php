@@ -65,7 +65,7 @@
             <div class="subtitle i">взрослым, желающим быть ещё счастливее</div>
             <div class="action">
                 <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>
-                <?if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?endif?>
+                <?php if(0):?><a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a><?php endif?>
             </div>
         </div>
         <div class="win_get_consult">
@@ -104,17 +104,18 @@
 
             <div class="title">Миссия</div>
             <div class="text-content" id="miss">
-                <?
+                <?php
                 echo $miss=str_replace("\n", "<br />",file_get_contents('texts/missiya.txt'));
                 ?>
             </div>
             <div class="text-content" id="service">
-                <?
+                <?php
                 echo $miss=file_get_contents('texts/service.txt');
                 ?>
             </div>
 
-            <?//history box
+            <?php
+            //history box
             $dir='texts/history/';
             $listFile=scandir($dir);
             unset($listFile[0]);
@@ -148,7 +149,7 @@
                 </form>
             </div>
             <div class="text-content" id="about">
-                <?
+                <?php
                 echo $miss=str_replace("\n", "<br />",file_get_contents('texts/about_me.txt'));
                 ?>
             </div>
