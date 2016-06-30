@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Engine';
+    src: local('Engine'), local('Engine-Regular'), url('engine.woff2') format('woff2'), url('engine.woff') format('woff'), url('engine.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Engine';
+    src: local('Engine Italic'), local('Engine-Italic'), url('engineitalic.woff2') format('woff2'), url('engineitalic.woff') format('woff'), url('engineitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}

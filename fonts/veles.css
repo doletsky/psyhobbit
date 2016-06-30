@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Veles';
+    src: local('Veles-Regular'), url('veles-regular.woff2') format('woff2'), url('veles-regular.woff') format('woff'), url('veles-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Veles';
+    src: local('Veles-Bold'), url('veles-bold.woff2') format('woff2'), url('veles-bold.woff') format('woff'), url('veles-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Yes siree bob';
+    src: local('Yes siree bob'), local('Yes_siree_bob'), url('yessireebob.woff2') format('woff2'), url('yessireebob.woff') format('woff'), url('yessireebob.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

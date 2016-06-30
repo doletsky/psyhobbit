@@ -1,3 +1,7 @@
+/*@font-face {*/
+    /*font-family: beermoney; *//* Имя шрифта */
+    /*src: url(../fonts/beermoney.ttf); *//* Путь к файлу со шрифтом */
+/*}*/
 html, body {
     height:100%;
     overflow:visible;
@@ -24,6 +28,7 @@ body {
     position: relative;
     overflow: hidden;
 }
+
 .mobil .imgback{
     background: url("../images/deti-zakat.jpg") no-repeat 50% 100%;
     background-size: cover;
@@ -31,6 +36,7 @@ body {
     width: 100%;
     position: absolute;
 }
+
 /*персоналия и связь*/
 .person {
     bottom: 390px;
@@ -388,3 +394,161 @@ li.active {
      float: left;
      margin-right: 5px;
  }
+/*lp edu*/
+.body-edu{
+    background-color: #223C51;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.edu .imgback{
+    background: url("../images/dol_edu_4.jpg") no-repeat 10% 100%;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+    position: absolute;
+}
+.edu .imgback h1{
+    color: white;
+    text-align: center;
+}
+.edu .imgback h1.top{
+    font-size: 80%;
+}
+.edu .imgback h1.down{
+    font-family: Engine;
+    position: absolute;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: 0;
+    transform: scaleX(1.6);
+}
+.edu .body-edu .logo_migip{
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    /*margin-top: -70px;*/
+    /*margin-left: 15px;*/
+    /*background: url("../images/logo_migip_white.png") no-repeat;*/
+    width: 100px;
+    /*height: 65px;*/
+}
+.edu .body-edu .my,
+.edu .body-edu .ekat,
+.edu .body-edu .and,
+.edu .body-edu .alex{
+    position: absolute;
+    color: white;
+    font-size: 220%;
+    bottom: 0;
+    font-family: Five Minutes;
+}
+.edu .body-edu .my{
+    left: 25%;
+    margin-top: -230px;
+}
+.edu .body-edu .ekat{
+    left: 410px;
+    bottom: 26%;
+}
+.edu .body-edu .and{
+    left: 27%;
+    margin-top: -110px;
+}
+.edu .body-edu .alex{
+    left: 5%;
+    bottom: 21%;
+}
+.edu .send{
+    position: relative;
+    width: 370px;
+    top: 50px;
+    left: 56%;
+    border: 2px solid darkslategray;
+    padding: 4px 4px;
+    background-color: #223C51;
+    text-align: center;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.edu .send input{
+    margin: 5px;
+    font-size: 185%;
+    width: 93%;
+    color: #363636;
+    font-family: Engine;
+    text-align: center;
+}
+.edu .send input[type='button']{
+    border: solid 2px;
+    border-radius: 10px;
+    background-color: rgb(255, 112, 7);
+    text-transform: uppercase;
+    padding: 10px;
+    width: 97%;
+}
+.red-line{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(255, 112, 7);
+    bottom: 15%;
+    margin-bottom: 0px;
+}
+.counter-data{
+    position: absolute;
+    bottom: 15%;
+    width: 320px;
+    text-align: center;
+
+    margin-bottom: -60px;
+}
+.cleft{
+    right: 50%;
+    margin-bottom: -64px;
+    /*margin-left: -160px;*/
+}
+.cright{
+    left: 50%;
+    width: 400px;
+}
+.title-counter{
+    font-family: Engine;
+    color: white;
+    font-size: 170%;
+    padding-bottom: 10px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: scaleX(1.6);
+}
+.number{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    float: left;
+    margin: 0 20px;
+    color: grey;
+    font-size: 220%;
+}
+.number:last-child{
+    color: rgb(255, 112, 7);
+}
+
+.subtitle-counter{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    color: white;
+    font-family: Engine;
+    font-size: 50%;
+}
+.dp{
+    position: absolute;
+    top: -6px;
+    left: 48px;
+    width: 100%;
+    color: white;
+    font-family: Engine;
+}
