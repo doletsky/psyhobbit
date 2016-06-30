@@ -20,6 +20,7 @@
     <script src="../js/main.js"></script>
     <script src="../js/slider-div.js"></script>
     <script src="../js/nicescroll/jquery.nicescroll.js"></script>
+    <script src="../js/edu.js"></script>
 
 </head>
 

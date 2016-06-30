@@ -486,6 +486,7 @@ li.active {
     text-transform: uppercase;
     padding: 10px;
     width: 97%;
+    cursor: pointer;
 }
 .red-line{
     width: 100%;
