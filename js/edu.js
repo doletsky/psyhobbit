@@ -1,12 +1,45 @@
 $(document).ready(function(){
+
+    $('.shadow').click(function(){
+        $('.shadow').css('display','none');
+        $('.popup').css('display','none');
+        $('.close-popup').css('display','none');
+    });
+
+    $('.close-popup').click(function(){
+        $('.shadow').css('display','none');
+        $('.popup').css('display','none');
+        $('.close-popup').css('display','none');
+    });
+
+    $('.body-edu input').focus(function(){
+        $(this).removeClass('empty');
+    });
+
     $('.body-edu input[type="button"]').click(function(){
         var form=Array();
+        var error=0;
+
         $('.body-edu input').each(function(){
-            form[form.length]=$(this).val();
+            var val=$(this).val();
+            if(val.length<=0){
+                $(this).addClass('empty');
+                error=1;
+            }
+            else{
+                form[form.length]=val;
+            }
         });
-        $.post("../sendmail.php", {form: 'Заявка на первую ступень', name: form[0], contact: form[1]});
-//        alert('Ok: '+form);
+        if(error==0){
+            $('#popup-name').text(form[0]);
+            $('.shadow').css('display','block');
+            $('.popup').css('display','block');
+            $('.close-popup').css('display','block');
+            $.post("../sendmail.php", {form: 'Заявка на первую ступень', name: form[0], contact: form[1]});
+        }
+
     });
+
     setInterval(function() {
 //        alert('Привет');
         var sec=parseInt($('#sec span').text());

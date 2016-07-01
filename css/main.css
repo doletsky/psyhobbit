@@ -553,3 +553,54 @@ li.active {
     color: white;
     font-family: Engine;
 }
+.shadow{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    display: none;
+}
+.popup{
+    position: absolute;
+    z-index: 9999;
+    width: 30%;
+    height: 150px;
+    top: 35%;
+    left: 35%;
+    background-color: #223C51;
+    border: 2px solid rgb(255, 112, 7);
+    font-family: Engine;
+    color: white;
+    font-size: 170%;
+    font-weight: 900;
+    transform: scaleX(1.6);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0;
+    display: none;
+}
+.close-popup{
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    color: rgb(255, 112, 7);
+    top: 30%;
+    left: 76%;
+    width: 10px;
+    height: 10px;
+    font-family: Engine;
+    font-weight: 900;
+    transform: scaleX(4);
+    font-size: 130%;
+    cursor: pointer;
+}
+#popup-name{
+    text-transform: capitalize;
+}
+.empty{
+    border: 2px solid red;
+}

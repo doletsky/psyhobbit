@@ -122,6 +122,12 @@
 <!--    &copy; Александра Долецкая. 2015-2016г.-->
 <!--    </div>-->
 </div>
-
+<div class="shadow"></div>
+<div class="popup">
+    <span id="popup-name"></span>!<br>
+    Ваша заявка отправлена!<br>
+    Мы свяжеся с Вами<br>по указанным контактам!
+</div>
+<div class="close-popup">X</div>
 </body>
 </html>
