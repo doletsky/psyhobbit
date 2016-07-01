@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Александра Долецкая. Консультация психолога.</title>
-    <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, психодрама, монодрама, сайт психолога" />
-    <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в Москве, психодрама и монодрама" />
+    <title>Александра Долецкая. ПРИГЛАШАЕМ НА ОБУЧЕНИЕ ПСИХОДРАМЕ</title>
+    <meta name="keywords" content="обучение, консультация, психолог, помощь, москва, индивидуальное консультирование, психодрама, монодрама, сайт психолога" />
+    <meta name="description" content="Обучение психодраме, консультация психолога, индивидуальная и групповая работа, психологическая помощь в Москве, психодрама и монодрама" />
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/slider-div.css" rel="stylesheet">
     <link href="../fonts/beermoney.css" rel="stylesheet">
@@ -65,115 +65,6 @@
 
 
 <div class="ver mobil edu">
-    <div class="position">
-<!--        <div class="person">-->
-<!--            <div class="foto"></div>-->
-<!--            <div class="name">Александра Долецкая</div>-->
-<!--            <div class="subtitle">психолог, психотерапевт</div>-->
-<!--            <div class="phone">+7(926)389-01-54</div>-->
-<!--            <div class="mail">doletskaya@bk.ru</div>-->
-<!--            <div class="subtitle i">взрослым, желающим быть ещё счастливее</div>-->
-<!--            <div class="action">-->
-<!--                <a class="get_consult" href="#wincons">Записаться на консультацию</a><br>-->
-<!--                --><?php //if(0):?><!--<a href="map.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=600,height=600,top=0'); popupWin.focus(); return false;" class="load-map">Где проходят консультации</a>--><?php //endif?>
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="win_get_consult">-->
-<!--            <div class="win_get_consult_header">Запись на консультацию<span class="close">x</span> </div>-->
-<!--            <div class="win_get_consult_body">-->
-<!--                <input type="hidden" id="GCform" name="formName" value="getCons">-->
-<!--                <table>-->
-<!--                    <tr>-->
-<!--                        <td>-->
-<!--                            Имя:-->
-<!--                        </td>-->
-<!--                        <td>-->
-<!--                            <input id="GCname" type="text" size="50" placeholder="Как к Вам обращаться">-->
-<!--                        </td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>-->
-<!--                            Тел./email:-->
-<!--                        </td>-->
-<!--                        <td>-->
-<!--                            <input id="GCcontacts" type="text" size="50" placeholder="Удобный для Вас способ связи">-->
-<!--                        </td>-->
-<!--                    </tr>-->
-<!--                </table><br>-->
-<!--                <u>Тема консультации:</u><br>-->
-<!--                <textarea id="GCtext" rows="10" cols="68" placeholder="Кратко опишите Вашу тему для консультирования"></textarea><br>-->
-<!--                <a href="#getcons" class="get_consult_yet">Записаться</a>-->
-<!--            </div>-->
-<!--            <div class="win_get_consult_after">Ваш запрос отправлен.<br>Я свяжусь с Вами по указанным контактам в течении дня.</div>-->
-<!--            <div class="win_get_consult_footer">-->
-<!--                * Стоимость одного часа индивидуальной работы 2500 руб.-->
-<!--                Данная форма является запросом на консультацию. Дата и время подтверждаются личным контактом по телефону.-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="text">-->
-<!---->
-<!--            <div class="title">Миссия</div>-->
-<!--            <div class="text-content" id="miss">-->
-<!--                --><?php
-//                echo $miss=str_replace("\n", "<br />",file_get_contents('texts/missiya.txt'));
-//                ?>
-<!--            </div>-->
-<!--            <div class="text-content" id="service">-->
-<!--                --><?php
-//                echo $miss=file_get_contents('texts/service.txt');
-//                ?>
-<!--            </div>-->
-<!---->
-<!--            --><?php
-//            //history box
-//            $dir='texts/history/';
-//            $listFile=scandir($dir);
-//            unset($listFile[0]);
-//            unset($listFile[1]);
-//
-//            $strPoint='';
-//            $strHTML='<div class="text-content" id="talk">';
-//            foreach($listFile as $fname){
-//                $idName=trim($fname,".txt");
-//                $strPoint.='<div class="point" id="'.$idName.'"></div>';
-//                $miss=str_replace("\n", "<br />",file_get_contents($dir.$fname));
-//                $strHTML.='<div class="slide"  id="'.$idName.'">'.$miss.'</div>';
-//            }
-//            $strHTML.='</div><div class="slide-point" id="talk"><div class="button-next">></div><div class="view-time"><div class="load-time"></div></div>'.$strPoint.'</div>';
-//            echo $strHTML;
-//            ?>
-<!---->
-<!--            <div class="text-content" id="contacts">-->
-<!--                <form>-->
-<!---->
-<!--                    <div class="askme">-->
-<!--                        <input type="hidden" id="askForm" name="askForm" value="getAsk">-->
-<!--                        Обязательно укажите, как к Вам обращаться и куда ответить<br><br>-->
-<!--                        Ваше имя: <input id="askName" type="text" size="58" placeholder="Как я могу к Вам обращаться?"><br>-->
-<!--                        Телефон: <input id="askTel" type="text" size="58" placeholder="Если укажете телефон, то я Вам позвоню."><br>-->
-<!--                        E-mail: <input id="askEmail" type="email" size="58" placeholder="Если укажете e-mail, то я смогу ответить письмом."><br>-->
-<!--                    </div>-->
-<!---->
-<!--                    <textarea id="askText" cols="60" rows="12" placeholder="Здесь напишите Ваш вопрос."></textarea><br>-->
-<!--                    <input id="askButton" type="button" value="Спросить">-->
-<!--                </form>-->
-<!--            </div>-->
-<!--            <div class="text-content" id="about">-->
-<!--                --><?php
-//                echo $miss=str_replace("\n", "<br />",file_get_contents('texts/about_me.txt'));
-//                ?>
-<!--            </div>-->
-<!--            <div class="menu-bottom">-->
-<!--                <ul>-->
-<!--                    <li class="miss open">Миссия</li>-->
-<!--                    <li class="service">Услуги</li>-->
-<!--                    <li class="about">Обо мне</li>-->
-<!--                    <li class="talk">Истории</li>-->
-<!--                    <li class="contacts">Спросить</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
 
     <div class="body-edu">
         <div class="imgback">
@@ -199,20 +90,29 @@
         </div>
         <div class="red-line"></div>
         <div class="counter-data cright">
-
-            <div class="number">90
+            <?php
+            $startTime=mktime(10, 0, 0, 10, 14, 2016);
+            $nowTime=time();
+            $countTime=$startTime-$nowTime;
+            $secDay=60*60*24;$secHour=60*60;
+            $days= floor($countTime/$secDay);
+            $hours=floor(($countTime-$days*$secDay)/$secHour);
+            $minutes=floor(($countTime-$days*$secDay-$hours*$secHour)/60);
+            $secs=$countTime-$days*$secDay-$hours*$secHour-$minutes*60;
+            ?>
+            <div id="ds" class="number"><span><?php if($days<10) echo '0'; echo $days?></span>
                 <div class="subtitle-counter">Дней</div>
                 <div class="dp">:</div>
             </div>
-            <div class="number">15
+            <div id="hr" class="number"><span><?php if($hours<10) echo '0'; echo $hours?></span>
                 <div class="subtitle-counter">Часов</div>
                 <div class="dp">:</div>
             </div>
-            <div class="number">22
+            <div id="min" class="number"><span><?php if($minutes<10) echo '0'; echo $minutes?></span>
                 <div class="subtitle-counter">Минут</div>
                 <div class="dp">:</div>
             </div>
-            <div class="number">03
+            <div id="sec" class="number"><span><?php if($secs<10) echo '0'; echo $secs?></span>
                 <div class="subtitle-counter">Секунд</div>
             </div>
         </div>
@@ -223,8 +123,5 @@
 <!--    </div>-->
 </div>
 
-<script>
-    console.log(screen);
-</script>
 </body>
 </html>
