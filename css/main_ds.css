@@ -1,0 +1,606 @@
+/*@font-face {*/
+    /*font-family: beermoney; *//* Имя шрифта */
+    /*src: url(../fonts/beermoney.ttf); *//* Путь к файлу со шрифтом */
+/*}*/
+html, body {
+    height:100%;
+    overflow:visible;
+}
+body {
+    background-color: #363636;
+    padding: 0;
+    margin: 0;
+    font-family: "PT Sans","Helvetica Neue",Helvetica,sans-serif;
+}
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+.imgback {
+    background: url("../images/deti-zakat.jpg") no-repeat 100% 80%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobil .imgback{
+    background: url("../images/deti-zakat.jpg") no-repeat 50% 100%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*персоналия и связь*/
+.person {
+    bottom: 390px;
+    color: #fff;
+    display: block;
+    /*height: 300px;*/
+    left: 50%;
+    margin-bottom: 20px;
+    margin-left: -630px;
+    /*opacity: 0.7;
+    padding: 10px 30px;*/
+    position: absolute;
+    width: 1200px;
+    z-index: 999;
+}
+
+.person .foto {
+    background: url("../images/itsme_011.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    height: 200px;
+    width: 232px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.person .name {
+    font-size: 50px;
+    text-shadow: -1px -1px 50px gray;
+}
+.person .subtitle {
+    font-size: 100%;
+}
+.person .action {
+    position: relative;
+    float: right;
+    top: -40px;
+}
+.mobil .person {
+    bottom: inherit;
+    color: #fff;
+    display: block;
+    height: inherit;
+    left: inherit;
+    margin: 20px 5%;
+    position: absolute;
+    width: 83%;
+    z-index: 999;
+}
+.mobil .position .person .foto {
+    float: left;
+    margin-right: 20px;
+}
+.mobil .position .person .action {
+    position: relative;
+    float: right;
+    top: -69px;
+    right: -60px;
+}
+.person .phone {
+	color: greenyellow;
+    font-size: 24px;
+}
+.person .mail {
+    font-size: 24px;
+    color: greenyellow;
+}
+.person .i {
+    font-size: 130%;
+    font-variant: small-caps;
+    margin: 2px 0;
+    font-style: italic;
+    text-shadow: 0 2px 5px black;
+    font-weight: bold;
+    /*border-bottom: solid 1px grey;*/
+}
+.mobil .person .i{
+    left: inherit;
+    bottom: inherit;
+}
+.get_consult {
+    background: linear-gradient(to bottom, #fdc244 0%, #f15b4b 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 200;
+    padding: 9px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.get_consult_yet {
+    background: linear-gradient(to bottom, #fdc244 0%, #f15b4b 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 9px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    left: 50%;
+    position: relative;
+    margin-left: -100px;
+    line-height: 55px;
+}
+/*форма записи на консультации*/
+.win_get_consult {
+    background-color: #808080;
+    border: 7px solid #474747;
+    border-radius: 25px;
+    top: 90px;
+    display: none;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+    width: 593px;
+    z-index: 9999;
+}
+.close {
+    background-color: #a8a8a8;
+    border-radius: 9px;
+    color: #000;
+    position: absolute;
+    right: 7px;
+    font-size: 70%;
+    padding: 0px 6px;
+    margin: 5px;
+    cursor: pointer;
+}
+.win_get_consult_body {
+    padding: 10px 50px 0;
+    font-size: 20px;
+    color: #fff;
+}
+.win_get_consult_after{
+    display: none;
+    padding: 10px 50px;
+    text-align: center;
+    color: #fff;
+}
+.win_get_consult_body input, .win_get_consult_body textarea {
+    margin: 2px 0;
+    width: 100%;
+}
+.win_get_consult_header {
+    background: linear-gradient(to bottom, #fdc244 0%, #f15b4b 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 22px;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.win_get_consult_footer {
+    font-size: 70%;
+    padding: 8px 20px;
+    color: #fff;
+    text-align: justify;
+}
+/*адрес на яндекс-карте*/
+.map {
+    background-color: #808080;
+    border: 7px solid #474747;
+    bottom: 50px;
+    display: none;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+    width: 580px;
+    z-index: 9999;
+    color: #ffffff;
+}
+.load-map {
+    color: #ffffff;
+    position: relative;
+    top: 20px;
+    left: 90px;
+}
+
+
+/*нижее поле для текста*/
+.text {
+    background-color: #363636;
+    border-top: 1px solid gold;
+    bottom: 50px;
+    color: #fff;
+    display: block;
+    height: 300px;
+    left: 50%;
+    margin-bottom: 20px;
+    margin-left: -630px;
+    opacity: 0.7;
+    padding: 10px 30px 20px;
+    position: absolute;
+    width: 1200px;
+    z-index: 999;
+    font-size: 16px;
+}
+.mobil .text {
+    bottom: inherit;
+    left: inherit;
+    margin: 2px 5%;
+    width: 83%;
+    top: 250px;
+    height: 43%;
+}
+.text .title {
+    color: gold;
+    font-size: 34px;
+    padding: 0 0 10px 20px;
+}
+
+.text .text-content {
+    display: none;
+    height: 85%;
+    line-height: 1.5;
+    overflow-y: auto;
+    position: relative;
+    padding-right: 50px;
+}
+.text-content table {
+    border-top: solid 1px grey;
+    padding-left: 70px;
+}
+.text-content td {
+    width: 400px;
+}
+
+.menu-bottom {
+    /*background-color: gold;*/
+    bottom: 0;
+    margin-bottom: 0;
+    margin-left: -70px;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+}
+.menu-bottom ul {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.menu-bottom ul li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    color: #363636;
+    text-transform: uppercase;
+}
+.miss {
+    background-color: gold;
+}
+.service {
+    background-color: orange;
+}
+.about {
+    background-color: greenyellow;
+}
+.talk  {
+    background-color: orangered;
+}
+.contacts{
+    background-color: lightskyblue;
+}
+li.active {
+    background-color: #363636;
+}
+
+.mobil .menu-bottom ul{
+    width: 100%;
+    top: 15px;
+    position: relative;
+}
+.mobil .menu-bottom ul li{
+    width: 20%;
+}
+/*.mobil .menu-bottom ul li.open {*/
+    /*width: 504px;*/
+/*}*/
+
+#contacts input {
+    /*float: right;*/
+    margin: 0 20px 0 0;
+}
+#contacts textarea {
+    /*float: right;*/
+    margin: 20px 0 0;
+}
+#contacts .askme{
+    float: left;
+    width: 440px;
+    margin-right: 20px;
+}
+#contacts .askme-note{
+    width: 100px;
+}
+#contacts #askButton{
+    margin: 10px 0 0;
+    /*float: right;*/
+}
+.copyright {
+    bottom: 0%;
+    position: absolute;
+    right: 3px;
+    color: #ffff88;
+    font-size: 85%;
+}
+
+#service table{
+    float: left;
+}
+.oferta{
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-top: 54px;
+    padding: 5px;
+    width: 236px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.oferta .price{
+    font-size: 120%;
+    text-align: center;
+}
+.oferta .price span{
+    font-size: 120%;
+    text-align: center;
+}
+.oferta .add{
+    font-size: 80%;
+    text-align: center;
+}
+
+.full{
+    display: none;
+}
+
+.mobil{
+    left: inherit;
+    position: relative;
+    top: inherit;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ .ul-service {
+     width: 60%;
+     border-top: rgb(255, 165, 0) solid 1px;
+     padding-top: 7px;
+ }
+ .ul-service li {
+     width: 49%;
+     float: left;
+     margin-right: 5px;
+ }
+/*lp edu*/
+.body-edu{
+    background-color: #223C51;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.edu .imgback{
+    background: url("../images/s_d_back4.jpg") no-repeat 10% 100%;
+    background-size: cover;
+    height: 95%;
+    width: 100%;
+    position: absolute;
+}
+.edu .imgback h1{
+    color: white;
+    text-align: center;
+}
+.edu .imgback h1.top{
+    font-size: 80%;
+}
+.edu .imgback h1.down{
+    font-family: Engine;
+    position: absolute;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: 25px;
+    transform: scaleX(1.6);
+}
+.edu .body-edu .logo_migip{
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    /*margin-top: -70px;*/
+    /*margin-left: 15px;*/
+    /*background: url("../images/logo_migip_white.png") no-repeat;*/
+    width: 100px;
+    /*height: 65px;*/
+}
+.edu .body-edu .my,
+.edu .body-edu .ekat,
+.edu .body-edu .and,
+.edu .body-edu .alex{
+    position: absolute;
+    color: white;
+    font-size: 220%;
+    bottom: 0;
+    font-family: Five Minutes;
+}
+.edu .body-edu .my{
+    left: 25%;
+    margin-top: -230px;
+}
+.edu .body-edu .ekat{
+    left: 560px;
+    bottom: 10%;
+}
+.edu .body-edu .and{
+    left: 27%;
+    margin-top: -110px;
+}
+.edu .body-edu .alex{
+    left: 5%;
+    bottom: 21%;
+}
+.edu .send{
+    position: relative;
+    width: 370px;
+    top: 50px;
+    left: 68%;
+    border: 2px solid darkslategray;
+    padding: 4px 4px;
+    background-color: #223C51;
+    text-align: center;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.edu .send input{
+    margin: 5px;
+    font-size: 185%;
+    width: 93%;
+    color: #363636;
+    font-family: Engine;
+    text-align: center;
+}
+.edu .send input[type='button']{
+    border: solid 2px;
+    border-radius: 10px;
+    background-color: rgb(255, 112, 7);
+    text-transform: uppercase;
+    padding: 10px;
+    width: 97%;
+    cursor: pointer;
+}
+.red-line{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(255, 112, 7);
+    bottom: 5%;
+    margin-bottom: 0px;
+}
+.counter-data{
+    position: absolute;
+    bottom: 15%;
+    width: 320px;
+    text-align: center;
+    display: none;
+    margin-bottom: -60px;
+}
+.cleft{
+    right: 50%;
+    margin-bottom: -64px;
+    /*margin-left: -160px;*/
+}
+.cright{
+    left: 50%;
+    width: 400px;
+}
+.title-counter{
+    font-family: Engine;
+    color: white;
+    font-size: 170%;
+    padding-bottom: 10px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: scaleX(1.6);
+}
+.number{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    float: left;
+    margin: 0 20px;
+    color: grey;
+    font-size: 220%;
+}
+.number:last-child{
+    color: rgb(255, 112, 7);
+}
+
+.subtitle-counter{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    color: white;
+    font-family: Engine;
+    font-size: 50%;
+}
+.dp{
+    position: absolute;
+    top: -6px;
+    left: 48px;
+    width: 100%;
+    color: white;
+    font-family: Engine;
+}
+.shadow{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    display: none;
+}
+.popup{
+    position: absolute;
+    z-index: 9999;
+    width: 30%;
+    height: 150px;
+    top: 35%;
+    left: 35%;
+    background-color: #223C51;
+    border: 2px solid rgb(255, 112, 7);
+    font-family: Engine;
+    color: white;
+    font-size: 170%;
+    font-weight: 900;
+    transform: scaleX(1.6);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0;
+    display: none;
+}
+.close-popup{
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    color: rgb(255, 112, 7);
+    top: 30%;
+    left: 76%;
+    width: 10px;
+    height: 10px;
+    font-family: Engine;
+    font-weight: 900;
+    transform: scaleX(4);
+    font-size: 130%;
+    cursor: pointer;
+}
+#popup-name{
+    text-transform: capitalize;
+}
+.empty{
+    border: 2px solid red;
+}
