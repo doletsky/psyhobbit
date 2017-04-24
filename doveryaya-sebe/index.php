@@ -21,7 +21,9 @@
     <script src="../js/slider-div.js"></script>
     <script src="../js/nicescroll/jquery.nicescroll.js"></script>
     <script src="../js/edu.js"></script>
-
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -66,16 +68,18 @@
 
 <div class="ver mobil edu">
 
+    <div class="send">
+        <input type="text" placeholder="Имя Фамилия"><br>
+        <input type="text" placeholder="телефон или почта"><br>
+        <input type="button" value="отправить заявку">
+    </div>
+
     <div class="body-edu">
         <div class="imgback">
 <!--            <h1 class="top">Московский Институт Гештальта и Психодрамы</h1>-->
             <h1 class="down">27-28 мая психологическая группа<br> "ДОВЕРЯЯ СЕБЕ"</h1>
 
-            <div class="send">
-                <input type="text" placeholder="Имя Фамилия"><br>
-                <input type="text" placeholder="телефон или почта"><br>
-                <input type="button" value="отправить заявку">
-            </div>
+
 
         </div>
 <!--        <div class="my"> и мы</div>-->

@@ -401,13 +401,7 @@ li.active {
     width: 100%;
     height: 100%;
 }
-.edu .imgback{
-    background: url("../images/s_d_back4.jpg") no-repeat 10% 100%;
-    background-size: cover;
-    height: 95%;
-    width: 100%;
-    position: absolute;
-}
+
 .edu .imgback h1{
     color: white;
     text-align: center;
@@ -419,7 +413,7 @@ li.active {
     font-family: Engine;
     position: absolute;
     left: 50%;
-    margin-left: -230px;
+    margin-left: -160px;
     margin-top: 25px;
     transform: scaleX(1.6);
 }
@@ -449,7 +443,7 @@ li.active {
 }
 .edu .body-edu .ekat{
     left: 560px;
-    bottom: 10%;
+    bottom: 34%;
 }
 .edu .body-edu .and{
     left: 27%;
@@ -457,19 +451,21 @@ li.active {
 }
 .edu .body-edu .alex{
     left: 5%;
-    bottom: 21%;
+    bottom: 37%;
 }
 .edu .send{
-    position: relative;
-    width: 370px;
-    top: 50px;
-    left: 68%;
-    border: 2px solid darkslategray;
+    position: absolute;
+    width: 70%;
+    top: 75%;
+    left: 15%;
+    border: 2px solid #fff;
     padding: 4px 4px;
     background-color: #223C51;
     text-align: center;
     opacity: 0.8;
     border-radius: 8px;
+    font-size: 200%;
+    z-index: 999;
 }
 .edu .send input{
     margin: 5px;
@@ -493,7 +489,7 @@ li.active {
     height: 4px;
     position: absolute;
     background-color: rgb(255, 112, 7);
-    bottom: 5%;
+    bottom: 30%;
     margin-bottom: 0px;
 }
 .counter-data{
@@ -603,4 +599,60 @@ li.active {
 }
 .empty{
     border: 2px solid red;
+}
+
+.edu .imgback{
+    background: url("../images/s_d_back4.jpg") no-repeat 17% 100%;
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+}
+
+@media (min-device-width: 450px) {
+    .edu .imgback{
+        background: url("../images/s_d_back4.jpg") no-repeat 10% 100%;
+        background-size: cover;
+        height: 95%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .edu .body-edu .ekat{
+        left: 560px;
+        bottom: 10%;
+    }
+    .edu .body-edu .and{
+        left: 27%;
+        margin-top: -110px;
+    }
+    .edu .body-edu .alex{
+        left: 5%;
+        bottom: 21%;
+    }
+
+    .red-line{
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        background-color: rgb(255, 112, 7);
+        bottom: 5%;
+        margin-bottom: 0px;
+    }
+
+    .edu .send{
+        position: absolute;
+        width: 25%;
+        top: 80px;
+        left: 100%;
+        border: 2px solid darkslategray;
+        padding: 4px 4px;
+        background-color: #223C51;
+        text-align: center;
+        opacity: 0.8;
+        border-radius: 8px;
+        z-index: 999;
+        margin-left: -27%;
+        font-size: 100%;
+    }
 }
