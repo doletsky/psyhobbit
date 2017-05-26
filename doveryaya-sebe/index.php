@@ -65,7 +65,33 @@
 
 </script>
 
-
+<div id="erorr"
+     style='
+    position: absolute;
+    width: 760px;
+    height: 400px;
+    background-color: wheat;
+    border: 6px solid #223C51;
+    border-radius: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -380px;
+    margin-top: -230px;
+    text-align: center;
+    z-index: 99999;
+    font-size: 180%;
+    font-family: "Five Minutes";
+    padding: 30px;
+     '>
+    <b>Друзья!</b><br>Выяснилось, что у нас все время<br>не работала кнопка записи на группу "Отправить заявку"!!!  :(<br>
+    Это означает, что мы не получили ни одной отправленной через него заявки! Группа отменена, но если вы записывались, а мы никак на это не отреагировали,<br>
+    во-первых, примите наши искренние извинения,<br>
+    а во-вторых, найдитесь, пожалуйста, личным сообщением в фейсбук или на почту.<br>
+    <b>Александра Долецкая.</b> fb: <a href="https://www.facebook.com/alexandra.doletskaya">https://www.facebook.com/alexandra.doletskaya</a>,<br>e-mail: doletskaya@bk.ru<br>
+    <b>Дарья Приходько.</b> fb: <a href="https://www.facebook.com/daria.prihodko">https://www.facebook.com/daria.prihodko</a> <br>
+    Спасибо!
+</div>
+    <div style="position: absolute;z-index: 9999;width: 100%; height: 100%; background-color: #808080; opacity: 0.5"></div>
 <div class="ver mobil edu">
 
     <div class="send">
