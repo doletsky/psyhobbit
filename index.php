@@ -5,6 +5,7 @@
     <title>Александра Долецкая. Консультация психолога.</title>
     <meta name="keywords" content="консультация, психолог, помощь, москва, индивидуальное консультирование, психодрама, монодрама, сайт психолога" />
     <meta name="description" content="Консультация психолога, индивидуальная и групповая работа, психологическая помощь в Москве, психодрама и монодрама" />
+    <meta name="yandex-verification" content="9bf9fce94b1ce52a" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider-div.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
