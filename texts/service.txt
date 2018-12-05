@@ -14,6 +14,6 @@
 </ul>
 
 <div class="oferta">
-<div class="price">Стоимость сеанса <span>3000&nbsp;руб.<span> </div>
+<div class="price">Стоимость сеанса <span>4000&nbsp;руб.<span> </div>
 <div class="add">Длительность сеанса 1 час</div>
 </div>
