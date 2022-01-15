@@ -58,6 +58,7 @@
     <div class="subtitle">психолог, психотерапевт</div>
     <div class="phone">+7(926)389-01-54</div>
     <div class="mail">doletskaya@bk.ru</div>
+    <div class="instagram">https://www.instagram.com/alexandra_doletskaya/</div>
     <div class="subtitle i">взрослым, желающим быть ещё счастливее</div>
 </div>
     <div class="imgback blur">
