@@ -62,24 +62,53 @@ body {
     top: -40px;
 }
 .person .phone {
-	color: #3d2e1b;
-    font-size: 24px;
+	color: #fff;
+    font-size: 18px;
+    padding: 7px;
 }
-.person .mail {
-    font-size: 24px;
-    color: greenyellow;
-}
-.person .instagram:before {
+.person .phone:before {
     content: "";
     display: block;
-    background: url('../images/i.jpg') no-repeat;
+    background: url('../images/whatsapp_socialnetwork_17360.png') no-repeat;
     background-size: cover;
     width: 25px;
     height: 25px;
     float: left;
 }
+.person .mail {
+    font-size: 19px;
+    color: #fff;
+    position: relative;
+    height: 29px;
+}
+.person .mail:before {
+    content: "";
+    display: block;
+    background: url('../images/metro_email_11435.png') no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+.person .instagram:before {
+    content: "";
+    display: block;
+    background: url('../images/iconfinder-social-media-applications-3instagram-4102579_113804.png') no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
 .person .instagram {
-font-size: 24px;
+    font-size: 18px;
+    position: relative;
+    left: 3px;
+}
+.person .instagram a {
+    text-decoration: none;
+    padding-left: 8px;
+    color: #fff;
 }
 .person .i {
     font-size: 130%;
@@ -312,4 +341,46 @@ li.active {
 .oferta .add{
     font-size: 80%;
     text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    .person {
+        bottom: auto;
+        top: 2%;
+        color: #fff;
+        display: block;
+        height: 300px;
+        left: 50%;
+        margin-bottom: 20px;
+        margin-left: -116px;
+        opacity: 1;
+        padding: inherit;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    .person .foto {
+        float: none;
+    }
+    .person .name {
+        font-size: 22px;
+        text-shadow: -1px -1px 50px gray;
+    }
+    .person .i {
+        font-size: 110%;
+        font-variant: small-caps;
+        margin: 25px 0;
+        font-style: italic;
+        position: relative;
+        bottom: 0px;
+        left: auto;
+        text-shadow: 0 2px 5px black;
+        font-weight: bold;
+        width: 73%;
+    }
+    .person .phone {
+        color: #fff;
+        font-size: 18px;
+        padding: 7px 0px;
+    }
 }
