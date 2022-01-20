@@ -343,31 +343,39 @@ li.active {
     text-align: center;
 }
 
-@media screen and (max-width: 480px){
-    .person {
+    body.m {
+        width: 140%;
+        height: 140%;
+    }
+    .person.mobil {
         bottom: auto;
         top: 2%;
         color: #fff;
         display: block;
-        height: 300px;
+        height: 43%;
         left: 50%;
         margin-bottom: 20px;
-        margin-left: -116px;
+        margin-left: -30%;
         opacity: 1;
         padding: inherit;
         position: absolute;
         width: 100%;
         z-index: 999;
     }
-    .person .foto {
+    .person.mobil .foto {
         float: none;
+        width: 100%;
+        height: 100%;
     }
-    .person .name {
-        font-size: 22px;
+    .person.mobil .name {
+        font-size: 68pt;
         text-shadow: -1px -1px 50px gray;
     }
-    .person .i {
-        font-size: 110%;
+    .person.mobil .subtitle {
+        font-size: 50pt;
+    }
+    .person.mobil .i {
+        font-size: 60pt;
         font-variant: small-caps;
         margin: 25px 0;
         font-style: italic;
@@ -376,11 +384,13 @@ li.active {
         left: auto;
         text-shadow: 0 2px 5px black;
         font-weight: bold;
-        width: 73%;
+        width: 80 %;
     }
-    .person .phone {
-        color: #fff;
-        font-size: 18px;
-        padding: 7px 0px;
+    .person.mobil .phone, .person.mobil .mail, .person.mobil .instagram {
+        font-size: 46pt;
+        height: 8%;
     }
-}
+    .person.mobil .phone:before, .person.mobil .mail:before, .person.mobil .instagram:before {
+        width: 7%;
+        height: 100%;
+    }

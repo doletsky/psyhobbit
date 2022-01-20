@@ -63,5 +63,12 @@ $(document).ready(function(){
             $('.ymap').html(data);
 
     });
+    //window.addEventListener("resize", function() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $('.person').addClass('mobil');
+        $('body').addClass('m');// код для мобильных устройств
+    }
+
+    //}, false);
 });
 
